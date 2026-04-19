@@ -22,6 +22,8 @@
 
 #set bibliography(style: "ieee")
 
+#show link: it => text(fill: rgb("#1a56db"), weight: "bold")[#it]
+
 
 #let title      = "Chimera States in Coupled Phase Oscillators"
 #let authors    = (
@@ -60,6 +62,7 @@
 
   #block(below: 2.4em)[
     #text(size: 10pt, style: "italic")[#affiliation]
+    #footnote[Source code and report: #link("https://github.com/Darsh-A/Chimera_NLD")]
   ]
 ]
 
@@ -129,7 +132,8 @@ sleep in certain animals, where one brain hemisphere stays awake while the other
 *Scope of this project.* We simulate the Abrams–Strogatz model on a ring of $N = 512$
 coupled phase oscillators, reproduce the key diagnostic plots from the original paper
 @abrams2004, and sweep the phase-lag parameter $alpha$ to map the transition from full
-synchronization to the chimera regime.
+synchronization to the chimera regime. All code and the compiled report are available at
+#link("https://github.com/Darsh-A/Chimera_NLD").
 
 
 = Mathematical Model
