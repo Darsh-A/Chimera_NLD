@@ -343,7 +343,9 @@ time-step, giving a direct, model-independent measure of local synchronization a
 ring position.
 
 #figure(
-  image("../plots/local_order.png", width: 100%),
+  placement: top,
+  scope: "parent",
+  image("../plots/local_order.png", width: 70%),
   caption: [
     Sliding-window local order parameter $|z(x)|$ at $t = 5000$.
     Window size: $2 times 40 + 1 = 81$ oscillators.
@@ -366,7 +368,8 @@ variations in $|z|$. These would shrink with larger $N$ or wider windows.
 kernel-weighted complex order parameter from @eq-order.
 
 #figure(
-  image("../plots/paper_fig1.png", width: 100%),
+  placement: auto,
+  image("../plots/paper_fig1.png", width: 85%),
   caption: [
     Reproduction of Figure 1 from @abrams2004.
     (a) Phase snapshot $theta(x)$.
@@ -396,7 +399,9 @@ the cosine profile predicted by @eq-Theta.
 oscillator, computed from unwrapped phases over the second half of the simulation.
 
 #figure(
-  image("../plots/drift_frequency.png", width: 100%),
+  placement: top,
+  scope: "parent",
+  image("../plots/drift_frequency.png", width: 70%),
   caption: [Mean drift frequency $chevron.l dot(theta) chevron.r (x)$ for each oscillator.],
 ) <fig-drift>
 
@@ -423,7 +428,9 @@ their position on the ring.
 function of $alpha$, from a sweep of 20 evenly spaced values in $[1.2, pi\/2]$.
 
 #figure(
-  image("../plots/bifurcation_sweep.png", width: 100%),
+  placement: top,
+  scope: "parent",
+  image("../plots/bifurcation_sweep.png", width: 70%),
   caption: [
     Bifurcation sweep: global order parameter $chevron.l R chevron.r$ vs. phase-lag $alpha$.
   ],
@@ -526,6 +533,10 @@ incoherent domains to coexist. Future work could explore how these states behave
 different coupling topologies or in two-dimensional arrays.
 
 
+
+#[
+  #set text(size: 10.5pt)
+  #bibliography("references.bib")
 ]
 
-#bibliography("references.bib")
+]
