@@ -24,6 +24,8 @@
 
 #show link: it => text(fill: rgb("#1a56db"), weight: "bold")[#it]
 
+#show figure.caption: it => text(size: 9pt, style: "italic")[#it]
+
 
 #let title      = "Chimera States in Coupled Phase Oscillators"
 #let authors    = (
@@ -89,7 +91,7 @@
 #v(0.6em)
 
 
-#columns(2, gutter: 1.2em)[
+#columns(2, gutter: 2.0em)[
 
 = Introduction
 
@@ -423,8 +425,7 @@ function of $alpha$, from a sweep of 20 evenly spaced values in $[1.2, pi\/2]$.
 #figure(
   image("../plots/bifurcation_sweep.png", width: 100%),
   caption: [
-    Bifurcation sweep: global order parameter $chevron.l R chevron.r$ vs.\ phase-lag
-    $alpha$.
+    Bifurcation sweep: global order parameter $chevron.l R chevron.r$ vs. phase-lag $alpha$.
   ],
 ) <fig-bifurc>
 
