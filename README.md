@@ -11,7 +11,7 @@ src/
   funcs.py       ODE right-hand side, order parameters, drift frequency
   utils.py       initial conditions, solver wrapper, chimera retry
   plots.py       all figure generation
-plots/           generated figures and animation (gitignored)
+plots/           generated figures and animation
 report/
   paper.typ      typst source
   paper.pdf      compiled report
